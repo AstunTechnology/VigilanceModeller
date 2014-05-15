@@ -1,0 +1,79 @@
+body {
+    font-family: arial,helvetica,sans-serif;
+    font-size: 14px;
+    color: #111;
+    background-color: #fff;
+}
+
+.errorlist {
+    color: red;
+    font-weight: bold;
+}
+
+label
+{
+    width: 7em;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    display: block;
+    font-weight: bold;
+}
+
+.submit input
+{
+    margin-left: 7.5em;
+}
+
+h1 {
+    font-size: 1.8em;
+}  
+h2 {
+    font-size: 1.6em;
+    clear: both;
+}   
+h3 {
+    font-size: 1.4em;
+}     
+h4 {
+    font-size: 1.2em;
+}     
+h5 {
+    font-size: 1.1em;
+}    
+
+a img{
+    border: 0;
+}
+
+p, input {font-size: 1em;} 
+
+
+#content {
+    overflow: hidden;
+    clear: both;
+}
+
+.info {
+	width: 50%;
+	float: right;
+	font-size: 0.9em;
+	background-color: #ffa;
+	color: #333;
+	border: 1px solid #333;
+	padding: 0.5em 1em;
+}
+
+#footer {
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+	margin-top: 16px;
+}
+
+
+
+#UploadFileForm{
+	padding: 1em 0;
+}
+

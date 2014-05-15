@@ -1,0 +1,68 @@
+from django.conf import settings
+
+FILESAVEPATH = '/fileupload/tmp/'
+
+DOWNLOADPATH = '/fileupload/tmp/'
+
+PURGEHOURS = 24
+
+#for dev
+SITE_MEDIA = '/site_media'
+
+
+
+#FILE PATHS FOR EXTERNAL APPLICATIONS
+paths = {
+	'ogr': '/OGR/'
+}
+
+#POSTGRESQL SETTINGS FOR PROSPECTIVE MAPPING
+postgresql = {
+	'user': 'user',
+	'dbname': 'dbname',
+	'password': 'password'
+}
+
+#MATRIX DEFAULT PARAMETERS
+matrix = {
+    'spatial_bandwidth': 4,
+    'temporal_bandwidth': 4,
+    'cell_size': 100
+}
+
+#VALUES FOR THE VERIFICATION LINK
+verification = {
+    'linkurl': 'http://link.to.site.net/validatelink',
+    'verificationsubject': 'File Upload Verification',
+    'verificationfromemail': 'uploader@link.to.site.net',
+    'templateplaintext': 'emailverification.txt'
+}
+
+
+#VALUES FOR THE DOWNLOAD LINK
+download = {
+    'linkurl': 'http://link.to.site.net/download',
+    'subject': 'File Download Available',
+    'fromemail': 'from@link.to.site.com',
+    'templateplaintext': 'filedownload.txt'
+}
+
+#TEXT FOR ERROR MESSAGES
+error = {
+    'invalidextension': 'You can only upload .csv files.',
+    'extensionerror': 'We had a problem determining the file extension.',
+    'filesaveerror': 'Error storing the uploaded file',
+    'nodatecolumn': 'No "Date" Column Found ',
+    'noeastingcolumn': 'No "Easting" Column Found. ',
+    'nonorthingcolumn': 'No "Northing" Column Found. ',
+    'columncountwrong': 'Wrong number of column headers found, CSV file should only contain "Easting", "Northing" and "Date" columns.',
+    'invalidheader': 'One or more of the headers in your csv file is invalid. Please correct them and re-upload the file.',
+    'invaliddate': 'One or more of the Dates in your CSV file is invalid - please ensure all dates are in YYYY-MM-DD format.',
+    'dbsaveerror': 'Error saving information to the database',
+    'emailerror': 'We tried to send you a verification link via E-Mail but it failed',
+    
+    
+    
+    
+    
+}    

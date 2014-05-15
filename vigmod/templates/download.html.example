@@ -1,0 +1,11 @@
+{% extends "vigmap-base.html" %}  
+{% block title %}Download prospective mapping data{% endblock title %}
+{% block content %}
+        <h2>Your file has been processed</h2>
+        <p>The following files have been generated from your uploaded file:</p>
+        <ul>
+        	<li><p><a href="files/{{mapinfofile}}">MapInfo file</a></p></li>
+        	<li><p><a href="files/{{shapefile}}">Shapefile</a></p></li>        	
+        	<!--<li><p><a href="download/{{csvfile}}">CSV file</a></p></li>-->
+        </ul>
+{% endblock content %}

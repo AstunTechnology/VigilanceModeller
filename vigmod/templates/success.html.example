@@ -1,0 +1,7 @@
+{% extends "vigmap-base.html" %}  
+{% block title %}File Upload Successfully{% endblock title %}
+{% block content %}
+        <h2>File Uploaded Successfully</h2>
+        <p>The file has been uploaded successfully and placed in the database queue. In order to store the file permanently, you need to verify your email address.</p>
+        <p>We have emailed you a verification link. This link is valid for <b>24 Hours</b>. Please verify your email address within 24 Hours to ensure your file is stored permanently.</p>
+{% endblock content %}

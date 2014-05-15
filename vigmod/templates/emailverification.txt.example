@@ -1,0 +1,13 @@
+Hi there,
+
+In order to make sure the email is valid you need to verify your email address before we will store the file you have just uploaded.
+
+Please click on the link below to verify your email address.
+
+{{verificationlink}}
+
+Note: This link is valid for 24 hours only.
+
+
+Regards,
+Administrator

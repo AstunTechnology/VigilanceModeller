@@ -1,0 +1,22 @@
+{% extends "vigmap-base.html" %}  
+{% block title %}Upload file to database{% endblock title %}
+{% block content %}   
+        <h2>Upload a file to the Database</h2>
+		<p>Welcome to the Safer Neighbourhoods prospective map generator</p>
+		<p>To begin please enter a valid email address and select a file to upload.</p>
+        <div class="info">
+			<p>The file must conform to the following restrictions:</p>
+			<ol>
+				<li><p>It must be in <strong>CSV</strong> format</p></li>
+				<li><p>It must have <em>only</em> <strong>Easting</strong>, <strong>Northing</strong> and <strong>Date</strong> fields. </p></li>
+				<li><p>The date field must be of the format <strong>YYYY-MM-DD</strong>, e.g. 2010-06-21</li>
+			</ol>
+			<p>The output files will create values for all weeks in the range from the earliest to most recent dates in your file, you will need to filter on the <stron>week_commencing</strong> fields to get a map for a particular week.</p>
+			<p>Once the email address has been verified (we'll send you an email) and the file successfully uploaded, we'll queue the file for processing.</p> 
+        </div>
+        <div class="errorlist">{{ error }}</div>
+        <form name="UploadFileForm" id="UploadFileForm" enctype="multipart/form-data" method="POST" action="/fileupload/upload/">
+            {{ form.as_p }}
+        <p class="submit"><input type="submit" value="Upload"/></p>
+        </form>   
+{% endblock content %}  

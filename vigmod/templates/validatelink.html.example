@@ -1,0 +1,7 @@
+{% extends "vigmap-base.html" %}  
+{% block title %}E-Mail Address Validated Successfully{% endblock title %}
+{% block content %}
+        <h2>E-Mail Address Validated Successfully</h2>
+        <p>Thank you for validating your E-Mail address. Your file has been stored until it can be processed.</p>
+        <p>Once the data has been processed you will be emailed a link to a page where you can download the output files.</p>
+{% endblock content %}
